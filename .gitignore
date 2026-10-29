@@ -31,3 +31,6 @@ Thumbs.db
 *.phar
 *.sqlite
 /storage/shots
+
+/AGENTS.md
+/CLAUDE.md
