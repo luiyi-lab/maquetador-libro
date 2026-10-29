@@ -1,5 +1,12 @@
 # Maquetador de Libros
 
+![Estado](https://img.shields.io/badge/estado-en_desarrollo_activo-yellow) ![Tests](https://img.shields.io/badge/tests-36_PASS-brightgreen) ![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?logo=php&logoColor=white)
+
+> 🚧 **Proyecto en desarrollo activo — no es una versión final.** El MVP funciona
+> y está probado (36 tests), pero el proyecto **sigue en corrección y mejora
+> continua**, con las Fases 6+ pendientes (import DOCX, EPUB, más plantillas,
+> portadas, etc.).
+
 Plataforma web donde el usuario sube un manuscrito (.md / .txt) y obtiene un libro maquetado y exportable a PDF, sin depender de IA para funcionar. Pipeline del MVP:
 
 ```
@@ -110,9 +117,11 @@ Yo no hago cosas para que duren.
 :::separador  ← ornamento tipográfico
 ```
 
-## Estado
+## Estado del proyecto
 
-- **IMPLEMENTADO y PROBADO:** MVP completo (Fases 1–5), 36 tests PASS,
+🔄 **En desarrollo activo** — se sigue corrigiendo y mejorando constantemente.
+
+- **FUNCIONA y está probado:** MVP completo (Fases 1–5), 36 tests PASS,
   PDF validado end-to-end.
 - **PENDIENTE (Fases 6+):** import DOCX, export EPUB/DOCX, más plantillas,
   portadas con imagen, versionado con UI, IA opcional (Fase 8).
