@@ -1,0 +1,128 @@
+/* Plantilla "Novela clásica" — dialecto mPDF (subset de CSS, §4 AGENTS.md).
+   Los marcadores {{...}} se sustituyen con la configuración del usuario. */
+
+body {
+    font-family: {{font_family}};
+    font-size: {{font_size}}pt;
+    line-height: {{line_height}};
+    text-align: justify;
+    color: #111111;
+}
+
+/* --- Portada tipográfica --- */
+.title-page {
+    text-align: center;
+    page-break-after: always;
+}
+.title-book {
+    font-size: {{font_size_t}}pt;
+    font-weight: bold;
+    margin-top: 35%;
+}
+.title-subtitle {
+    font-size: {{font_size}}pt;
+    font-style: italic;
+    margin-top: 1em;
+}
+.title-author {
+    font-size: 14pt;
+    margin-top: 4em;
+}
+.title-pages {
+    font-size: 9pt;
+    margin-top: 3em;
+}
+
+/* --- Preliminares --- */
+.copyright {
+    font-size: 9pt;
+    text-align: left;
+    line-height: 1.4;
+}
+.toc-title {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.mpdf_toc {
+    font-family: {{font_family}};
+    font-size: {{font_size}}pt;
+}
+
+/* --- Capítulos ---
+   Los saltos de página entre capítulos son explícitos (<pagebreak />),
+   no CSS, para evitar páginas en blanco accidentales. */
+.chapter-number {
+    text-align: {{chapter_alignment}};
+    font-size: 12pt;
+    letter-spacing: 0.15em;
+    margin-top: {{chapter_spacing}};
+}
+h1.chapter-title {
+    text-align: {{chapter_alignment}};
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-bottom: {{chapter_spacing}};
+    text-align: {{chapter_alignment}};
+}
+h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+}
+h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+/* --- Texto --- */
+p {
+    margin: 0;
+    text-indent: {{paragraph_indent}};
+}
+p.no-indent,
+p.first {
+    text-indent: 0;
+    margin-top: {{paragraph_spacing}};
+}
+.epigraph {
+    margin: 3em 10%;
+}
+.epigraph p {
+    font-style: italic;
+    font-size: {{font_size_epigraph}}pt;
+    text-align: left;
+    text-indent: 0;
+}
+.epigraph .epigraph-source {
+    text-align: right;
+    font-style: normal;
+    font-size: 10pt;
+    margin-top: 0.6em;
+}
+blockquote {
+    margin: 0.8em 2em;
+    font-style: italic;
+}
+p.separator {
+    text-align: center;
+    text-indent: 0;
+    margin: 1em 0;
+}
+ul, ol {
+    margin: 0.5em 0 0.5em 1.5em;
+}
+li {
+    margin-bottom: 0.3em;
+}
+img {
+    max-width: 100%;
+}
+figcaption {
+    font-size: 9pt;
+    text-align: center;
+}

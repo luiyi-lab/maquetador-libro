@@ -1,0 +1,37 @@
+{
+  "slug": "classic",
+  "name": "Novela clásica",
+  "description": "6×9 in, tipografía serif, texto justificado con sangría, capítulos en página nueva, numeración desde el cuerpo.",
+  "page_sizes": {
+    "6x9": [152.4, 228.6],
+    "5x8": [127.0, 203.2],
+    "5.25x8": [133.35, 203.2],
+    "a5": [148.0, 210.0],
+    "a4": [210.0, 297.0],
+    "letter": [215.9, 279.4]
+  },
+  "fonts": [
+    {"id": "dejavuserif", "label": "DejaVu Serif", "kind": "serif"},
+    {"id": "dejavuserifcondensed", "label": "DejaVu Serif Condensed", "kind": "serif"},
+    {"id": "dejavusans", "label": "DejaVu Sans", "kind": "sans"},
+    {"id": "freeserif", "label": "Free Serif", "kind": "serif"}
+  ],
+  "defaults": {
+    "page_size": "6x9",
+    "font_family": "dejavuserif",
+    "font_size": 11,
+    "line_height": 1.5,
+    "margin_top": 20,
+    "margin_bottom": 20,
+    "margin_inner": 18,
+    "margin_outer": 18,
+    "paragraph_indent": "1.2em",
+    "paragraph_spacing": "0",
+    "chapter_alignment": "center",
+    "chapter_spacing": "2.5em",
+    "show_page_numbers": true,
+    "header_enabled": false,
+    "footer_enabled": true,
+    "toc_enabled": false
+  }
+}
